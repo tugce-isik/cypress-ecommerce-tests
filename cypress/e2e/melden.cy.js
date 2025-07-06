@@ -1,21 +1,21 @@
 describe('Anmeldetests', () => {
   beforeEach(() => {
-    cy.visit('https://automationexercise.com/')
-    cy.contains('Signup / Login').click()
+    cy.visit('https://automationexercise.com/');
+    cy.contains('Signup / Login').click();
   })
 
   it('Meldet sich mit gültigen Zugangsdaten an', () => {
-    cy.get('[data-qa="login-email"]').type('tugcesk580@gmail.com')
-    cy.get('[data-qa="login-password"]').type('hfq8@gygp5TJi@M')
-    cy.get('[data-qa="login-button"]').click()
-    cy.contains('Logged in as').should('exist')
+    cy.get('[data-qa="login-email"]').type('kucuktugce1994@gmail.com');
+    cy.get('[data-qa="login-password"]').type('hfq8@gygp5TJi@M');
+    cy.get('[data-qa="login-button"]').click();
+    cy.contains('Logged in as').should('exist');
   })
 
   it('Zeigt einen Fehler bei ungültigen Anmeldedaten', () => {
-    cy.get('[data-qa="login-email"]').type('falch@mail.com')
-    cy.get('[data-qa="login-password"]').type('flachpass')
-    cy.get('[data-qa="login-button"]').click()
-    cy.contains('Your email or password is incorrect!').should('exist')
+    cy.get('[data-qa="login-email"]').type('falch@mail.com');
+    cy.get('[data-qa="login-password"]').type('falchpass');
+    cy.get('[data-qa="login-button"]').click();
+    cy.contains('Your email or password is incorrect!').should('exist');
   })
 })
 

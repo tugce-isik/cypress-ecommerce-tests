@@ -4,8 +4,12 @@ In diesem Projekt sind automatisierte Cypress-Tests für die Demo-Webseite autom
 
 ### ✔️ Test Features:
 - Anmelden
+- Formularvalidierungen
+- Fehlermeldungen
 - Produktsuche
 - In den Warenkorb
+- Zur Kasse
+- Screenshot/Video Beispiel
 
 ### 🔧 Technologies:
 - Cypress v20.18.1
@@ -15,3 +19,5 @@ In diesem Projekt sind automatisierte Cypress-Tests für die Demo-Webseite autom
 ```bash
 npm install
 npx cypress open
+npx cypress run --spec cypress/e2e/login-fail.cy.js
+

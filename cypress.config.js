@@ -8,5 +8,8 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     chromeWebSecurity: false,
+    video: true,
+    screenshotsFolder: 'cypress/screenshots',
+    videosFolder: 'cypress/videos',
   },
 });
