@@ -1,25 +1,3 @@
-// describe('Anmeldetests', () => {
-//     beforeEach(() => {
-      
-//       cy.visit('https://www.teknosa.com/');
-//       cy.contains('Kabul Et', { includeShadowDom: true }).click();
-//       cy.contains('Giriş Yap').click();
-//       cy.get('.hum-buttons').contains('Giriş Yap').click();
-//   })
-//   it('Meldet sich mit gültigen Zugangsdaten an', () => {
-//     cy.get('#j_username1').click().type('testFurCypress@protonmail.com');
-//     cy.get('#newLoginForm button').click();
-//     cy.get('#j_password').click().type('3taBjuUG2W6YcnT');
-//     cy.get('#customerLoginButton').click();
-//     cy.contains('Giriş Yap').should('not.exist');
-//   });
-//   it('Zeigt einen Fehler bei ungültigen Anmeldedaten', () => {
-//     cy.get('#j_username1').click().type('wrong@mail.com');
-//     cy.get('#newLoginForm button').click();
-//     cy.contains('Mail adresi ile kayıtlı bir hesap bulunamamıştır.').should('exist')
-//   })
-// })
-
 describe('Anmeldetests', () => {
   beforeEach(() => {
     cy.visit('https://automationexercise.com/')
@@ -40,3 +18,24 @@ describe('Anmeldetests', () => {
     cy.contains('Your email or password is incorrect!').should('exist')
   })
 })
+
+// describe('Anmeldetests', () => {
+//     beforeEach(() => {     
+//       cy.visit('https://www.teknosa.com/');
+//       cy.contains('Kabul Et', { includeShadowDom: true }).click();
+//       cy.contains('Giriş Yap').click();
+//       cy.get('.hum-buttons').contains('Giriş Yap').click();
+//   })
+//   it('Meldet sich mit gültigen Zugangsdaten an', () => {
+//     cy.get('#j_username1').click().type('testFurCypress@protonmail.com');
+//     cy.get('#newLoginForm button').click();
+//     cy.get('#j_password').click().type('3taBjuUG2W6YcnT');
+//     cy.get('#customerLoginButton').click();
+//     cy.contains('Giriş Yap').should('not.exist');
+//   });
+//   it('Zeigt einen Fehler bei ungültigen Anmeldedaten', () => {
+//     cy.get('#j_username1').click().type('wrong@mail.com');
+//     cy.get('#newLoginForm button').click();
+//     cy.contains('Mail adresi ile kayıtlı bir hesap bulunamamıştır.').should('exist')
+//   })
+// })

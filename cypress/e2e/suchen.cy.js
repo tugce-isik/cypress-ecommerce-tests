@@ -3,7 +3,7 @@ describe('Produktsuche Tests', () => {
     cy.visit('https://automationexercise.com/')
   });
 
-    it('Searches for a product and verifies results', () => {
+    it('Sucht nach einem Produkt und überprüft die Ergebnisse.', () => {
         cy.contains('Products').click();
         cy.get('#search_product').type("jeans");
         cy.get('#submit_search').click();
